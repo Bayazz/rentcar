@@ -30,6 +30,6 @@ public class CarDTO {
     @NotNull
     private CarEntity.BodyType bodyType;
 
-    @NotNull
+    @Nullable
     private Boolean isRented;
 }

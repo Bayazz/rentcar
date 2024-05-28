@@ -1,0 +1,9 @@
+#root {
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  place-items: unset !important;
+}
