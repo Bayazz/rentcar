@@ -57,7 +57,11 @@ const Cars = () => {
             .put(
                 `http://localhost:8080/cars/update/${car.id}`,
                 JSON.stringify(carDTO),
-                {cancelToken: axiosCancelTokenSource.token}
+                {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }, cancelToken: axiosCancelTokenSource.token
+                }
             )
             .then(() => {
                 setSelectedCarId(undefined);
