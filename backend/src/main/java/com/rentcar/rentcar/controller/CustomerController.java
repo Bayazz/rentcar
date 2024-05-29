@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/customers")
-@Tag(name = "CustomerDTO", description = "API for managing customers")
+@Tag(name = "Customer", description = "API for managing customers")
 public class CustomerController {
 
     private final CustomerService customerService;
@@ -23,9 +23,10 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-    @Operation(summary = "Get all customers")
+
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
+    @Operation(summary = "Get all customers")
     public List<CustomerDTO> getAllCustomers() {
         return customerService.getAllCustomers();
     }
@@ -38,8 +39,8 @@ public class CustomerController {
     }
 
     @PostMapping("/create")
-    @Operation(summary = "Create a new customer")
     @ResponseStatus(HttpStatus.CREATED)
+    @Operation(summary = "Create a new customer")
     public CustomerDTO createCustomer(@RequestBody @Valid CustomerDTO customer) {
         return customerService.createCustomer(customer);
     }

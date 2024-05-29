@@ -16,23 +16,18 @@ public class RentalDTO {
     @Nullable
     private Long id;
 
-    @Schema(description = "Name of a customer", example = "1")
     @NotBlank
     private String customerName;
 
-    @Schema(description = "Model of a car", example = "1")
     @NotBlank
     private String carModel;
 
-    @Schema(description = "Start date of the rental in UTC milliseconds", example = "1716654646097")
     @NotNull
     private Long startDate;
 
-    @Schema(description = "End date of the rental in UTC milliseconds", example = "1717756646097")
     @NotNull
     private Long endDate;
 
-    @Schema(description = "Total kilometers driven during the rental period", example = "500")
     @NotNull
     private Integer kilometersDriven;
 }

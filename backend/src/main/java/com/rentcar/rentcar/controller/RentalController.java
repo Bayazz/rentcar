@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/rentals")
-@Tag(name = "RentalDTO", description = "API for managing car rentals")
+@Tag(name = "Rental", description = "API for managing car rentals")
 public class RentalController {
     private final RentalService rentalService;
 
