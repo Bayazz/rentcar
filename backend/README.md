@@ -43,7 +43,7 @@ To initialize the H2 database with mock data, you need to run the SQL scripts pr
 
 ### Accessing the API
 
-The API can be accessed at `http://localhost:8080`. Swagger UI is available for exploring and testing the endpoints at `http://localhost:8080/swagger-ui.html`.
+The API can be accessed at `http://localhost:8080`. Swagger UI is available for exploring and testing the endpoints at `http://localhost:8080/swagger-ui/index.html`.
 
 ## API Documentation
 
